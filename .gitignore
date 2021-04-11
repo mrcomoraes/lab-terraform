@@ -1,0 +1,5 @@
+*.pdf
+plano
+TODO.md
+.terraform
+.terraform.lock.hcl
