@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "s3-bucket" {
   bucket = "${var.app_name}-${var.bucket_suffix}"
-  acl = var.acl_policy
+  acl    = var.acl_policy
 
   versioning {
     enabled = var.versioning
@@ -46,7 +46,7 @@ resource "aws_s3_bucket" "s3-bucket" {
   }
 
   tags = {
-    "app" = var.app_name
+    "app"      = var.app_name
     "log data" = var.bucket_suffix
   }
 }
